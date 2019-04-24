@@ -49,7 +49,7 @@ const generateCategoricalChart = ({
       compact: PropTypes.bool,
       width: PropTypes.number,
       height: PropTypes.number,
-      data: PropTypes.arrayOf(PropTypes.object),
+      data: PropTypes.arrayOf(PropTypes.oneOf([PropTypes.object, PropTyes.array, PropTypes.number])),
       layout: PropTypes.oneOf(['horizontal', 'vertical']),
       stackOffset: PropTypes.oneOf(['sign', 'expand', 'none', 'wiggle', 'silhouette']),
       throttleDelay: PropTypes.number,
